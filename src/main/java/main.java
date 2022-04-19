@@ -22,15 +22,16 @@ public class main {
     }
     private  static void comparar(int anum[],int anum2[]){
         int cont=0;
+        System.out.println("{");
         for(int x=0; x<=10; x++){
             anum2[x]=anum[x];
             for(int y=0; y<=10; y++){
                 if(anum2[x] == anum[y]);
                 cont++;
             }
-
+            System.out.printf("%d = %d, ",anum2[x],cont);
         }
-
+        System.out.println("}");
 
     }
 
